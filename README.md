@@ -1,6 +1,6 @@
 # Hindmarsh-Rose-Model-
 Neuronal chaos analysis: Hindmarsh-Rose model with Lyapunov exponents and bifurcation studies in Python with using only the inbuild libraries 
-# 🧠 Hindmarsh–Rose Neuron Model — Chaos Analysis
+#  Hindmarsh–Rose Neuron Model — Chaos Analysis
 
 This repository contains a complete numerical exploration of the **Hindmarsh–Rose neuronal model**, focusing on:
 
@@ -11,7 +11,7 @@ This repository contains a complete numerical exploration of the **Hindmarsh–R
 
 All simulations use a custom **4th-order Runge–Kutta integrator (RK4)** implemented from scratch.
 
-## 🔬 About the Hindmarsh–Rose Model
+##  About the Hindmarsh–Rose Model
 
 The Hindmarsh–Rose (HR) model is a biologically inspired neuron model capable of producing:
 
@@ -33,7 +33,7 @@ It is governed by:
 \]
 
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 ├── hr_chaos.py        # Main simulation and analysis script
@@ -43,30 +43,30 @@ It is governed by:
 
 ---
 
-## 🚀 Features
+##  Features
 
-### ✅ Custom RK4 Integrator  
+###  Custom RK4 Integrator  
 Numerical integration written manually, no SciPy dependency.
 
-### ✅ Phase Portrait Sweep  
+###  Phase Portrait Sweep  
 Plots HR dynamics for several external current values.
 
-### ✅ Butterfly Effect  
+###  Butterfly Effect  
 Simulates two trajectories starting ε-apart to visualize exponential divergence.
 
-### ✅ Lyapunov Exponent Calculation  
+###  Lyapunov Exponent Calculation  
 Implements the renormalization method:  
 - discards initial transients  
 - tracks divergence  
 - computes largest Lyapunov exponent  
 - determines chaotic vs periodic regimes  
 
-### ✅ Lyapunov vs Input Current Plot  
+###  Lyapunov vs Input Current Plot  
 Shows how chaos emerges as input current increases.
 
 ---
 
-## 📊 Plots Generated
+##  Plots Generated
 
 The script produces:
 
@@ -77,7 +77,7 @@ The script produces:
 
 ---
 
-## 🧪 How to Run
+##  How to Run
 
 Install dependencies:
 
@@ -100,7 +100,7 @@ This executes all experiments:
 
 ---
 
-## 🧩 Important Functions
+##  Important Functions
 
 ### `simulate_hr(I, T, dt)`
 Simulates HR neuron using RK4.
@@ -119,7 +119,7 @@ Plots λ vs I to detect chaos.
 
 ---
 
-## 📘 Scientific Interpretation
+##  Scientific Interpretation
 
 - **λ > 0** → Chaotic regime  
 - **λ = 0** → Quasi-periodic  
@@ -129,7 +129,7 @@ HR model typically becomes chaotic near **I ≈ 3.2–3.4**.
 
 ---
 
-## 🧑‍💻 Example Output (Lyapunov Sweep)
+##  Example Output (Lyapunov Sweep)
 
 ```
 I = 2.500 → λ ≈ -0.00231
@@ -140,7 +140,7 @@ I = 3.500 → λ ≈  0.00451
 
 ---
 
-## 🧠 Why This Project Is Useful
+##  Why This Project Is Useful
 
 This repository demonstrates:
 
@@ -151,7 +151,7 @@ This repository demonstrates:
 - Transition between periodic and chaotic regimes  
 
 
-## 🤝 Contributing
+##  Contributing
 
 Pull requests and improvements are welcome.  
 You may extend this to multi-neuron networks, bifurcation diagrams, or noise-driven dynamics.
